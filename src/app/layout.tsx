@@ -14,7 +14,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`h-screen bg-gray-100 flex justify-center items-center`}>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body
+        className={`h-screen bg-[#e1e5f2] flex justify-center items-center `}
+      >
         {children}
       </body>
     </html>

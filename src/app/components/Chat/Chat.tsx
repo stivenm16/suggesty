@@ -51,20 +51,20 @@ export const Chat = () => {
     await readStream()
     setInputMessage('')
   }
-
   return (
     <div className="flex flex-col justify-center items-center ">
+      <h1 className="text-2xl my-4 ">Powered by llama3 🚀🚀🚀</h1>
       <div className="flex gap-5 ">
         <input
           type="text"
           value={inputMessage}
           onChange={(e) => setInputMessage(e.target.value)}
           placeholder="Type your message..."
-          className="text-black p-2 rounded-lg"
+          className="text-black p-2 rounded-lg focus:scale-105 transition-all focus:shadow-xl outline-none"
         />
         <Button onClick={fetchMessages}>Send</Button>
       </div>
-      <div className="flex p-5  w-96 flex-wrap h-auto max-h-[40vh] mt-10 rounded-lg text-wrap bg-gray-300 shadow-2xl  relative overflow-y-scroll ">
+      <div className="flex p-5  w-96 flex-wrap h-auto max-h-[40vh] mt-10 rounded-lg text-wrap bg-[#034078]  text-white shadow-2xl  relative overflow-y-scroll ">
         {messages.map((message, index) => (
           <span key={index} style={{ whiteSpace: 'pre-wrap' }}>
             {message}
