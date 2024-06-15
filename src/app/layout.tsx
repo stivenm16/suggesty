@@ -14,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`h-screen bg-indigo-950 flex justify-center items-center`}
-      >
+      <body className={`h-screen bg-gray-100 flex justify-center items-center`}>
         {children}
       </body>
     </html>
